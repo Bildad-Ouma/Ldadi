@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <div className="fixed top-0 left-0 right-0 z-[1000] flex items-center justify-between bg-[#bf7083] px-5 py-2 h-[70px]">
+    <div className="fixed top-0 left-0 right-0 z-[1000] flex items-center justify-between bg-purple-600 px-5 py-2 h-[70px]">
       
       <div className="text-[50px] font-[Jaini_Purva] text-black flex items-center">
         <i className="fas fa-shopping-cart mr-2" />
