@@ -18,7 +18,7 @@ export default function Sidebar({clicked,handleClick}) {
           key={index}
           className={
             clicked[index]
-              ? "flex items-center bg-red-300 border-none text-[20px] text-black cursor-pointer gap-[10px] p-[5px] border-b border-black"
+              ? "flex items-center bg-red-300 rounded-md border-none text-[20px] text-black cursor-pointer gap-[10px] p-[5px] border-b border-black"
               : "flex items-center bg-none border-none text-[20px] text-black cursor-pointer gap-[10px] p-[5px] border-b border-black"
           }
           onClick={() => handleClick(index)} 
