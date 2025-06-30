@@ -4,8 +4,10 @@ import Home from './Dashboard/Home';
 import Rightbar from './Dashboard/RIghtbar';
 import Addpost from './Dashboard/Addpost';
 import { useState } from 'react';
+import Signup from './Landing-page/Signup';
+import { Route,Routes } from 'react-router-dom';
 
-function App() {
+function Render() {
     const [clicked, setClicked] = useState({
     0: true,
     1: false,
@@ -33,7 +35,20 @@ function App() {
          <Rightbar />
       </div>
     </div>
+  
   );
 }
-
+function App(){
+  return(
+    <div>
+      <Routes>
+        <Route path='/' element={<Landing />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/signup' element={<Signup />} />
+        <Route path='/dashboard' element={<Render />} />
+      </Routes>
+      <Render/>
+    </div>
+  )
+}
 export default App;
